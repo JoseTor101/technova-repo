@@ -1,8 +1,8 @@
 import React from "react";
-import InstagramIcon from "../icons/instagram.png";
-import TwitterIcon from "../icons/gorjeo.png";
-import WhatsappIcon from "../icons/whatsapp.png";
-import FacebookIcon from "../icons/facebook.png";
+import InstagramIcon from "../icons/instagram-logo.png";
+import TwitterIcon from "../icons/twitter-logo.png";
+import WhatsappIcon from "../icons/whatsapp-logo.png";
+import FacebookIcon from "../icons/facebook-logo.png";
 
 const Footer = () => {
   return (
@@ -42,7 +42,7 @@ const Footer = () => {
                 alt="redSocial"
               ></img>
             </a>
-            <a href="https://www.whatsapp.com/" target="blank">
+            <a href="https://wa.me/573137770947" target="blank">
               <img
                 src={WhatsappIcon}
                 className="icons_footer"
