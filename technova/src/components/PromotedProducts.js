@@ -8,7 +8,10 @@ import promotedProduct6 from '../images/promocionado6.jpg';
 
 const PromotedProducts = () => {
     return <div className="div_promoted_products">
-        <div className="subdivision_one_promoted_products">
+        <div className="ofertas">
+                <h2>OFERTAS</h2>
+            </div>
+        <div className="subdivision_one_promoted_products">            
             <div>
                 <center>
                   <img src={promotedProduct3} className="img_promoted_products" alt=""></img>
