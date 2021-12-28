@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Producto from "./Producto.js";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
 const ShoppingCartView = () => {
-   
+
 
   //Crear listado de productos
   const [ productos, guardarProductos ] = useState([
@@ -22,31 +22,31 @@ const ShoppingCartView = () => {
   return (
   <Fragment>
     <div className="shoppingCartBackground">
-       <Header />
-       <div className="shoppingCartProducts">
-           <div className="shoppingCartProductsHeader">
-             <div id="productAmount">
-               <p id="productAmountText">
-                 Productos en carrito({carrito.length}) (imagen de carrito)
-               </p>
-             </div>
-           </div>
+      <Header />
+      <div className="shoppingCartProducts">
+          <div className="shoppingCartProductsHeader">
+            <div id="productAmount">
+              <p id="productAmountText">
+                Productos en carrito({carrito.length}) (imagen de carrito)
+              </p>
+            </div>
+          </div>
 
-           <div className="shoppingProductsList">
+          <div className="shoppingProductsList">
             
-             {/* <div className="detailProductShoppingCart">
-               <div className="detailProductImg"></div>
-               <div className="detailProductName">Nombre</div>
-               <div className="detailProductDescription">Descripcion</div>
-               <div className="detailProductPrice">Precio</div>
+            {/* <div className="detailProductShoppingCart">
+              <div className="detailProductImg"></div>
+              <div className="detailProductName">Nombre</div>
+              <div className="detailProductDescription">Descripcion</div>
+              <div className="detailProductPrice">Precio</div>
              </div> */}
-             <ShoppingCartIndividualStructure 
+            <ShoppingCartIndividualStructure 
               carrito={carrito}
               agregarProducto={agregarProducto}/>
             
-           </div>
-         </div>
-       </div>
+          </div>
+        </div>
+      </div>
       <h1>Tienda virtual</h1>
       <h2>Lista de productos</h2>
       {productos.map(producto => (

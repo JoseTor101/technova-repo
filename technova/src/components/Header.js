@@ -22,7 +22,6 @@ const Header = () => {
             </h1>
           </div>
         </div>
-     
         <div className="header_side_right">
           <nav className="navHeader">
             <a href="#jump_start" className="a_items_header">
@@ -36,7 +35,7 @@ const Header = () => {
               Contacto
             </a>
           {HasAccount === true ?  <img src={user} alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
-         </nav>
+        </nav>
         </div> 
 
         {/* { <div className="header_side_right respMenu">
