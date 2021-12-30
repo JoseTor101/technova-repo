@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from "react";
 import ModalSI from "./ModalSI";
 import logo from "../icons/technova-logo1.jpg";
-import user from '../icons/user.png'
-import "boxicons";
+import user from '../icons/user.png';
 
 const Header = () => { 
   
@@ -39,10 +38,12 @@ const Header = () => {
             {HasAccount === true ?  <img src={user} alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
           </nav>
         </div> 
-          <div className="cart">
+
+          {/* <div className="cart">
           <box-icon name="cart"></box-icon>
           <span className="item__total">0</span>
-        </div> 
+        </div>  */}
+
       </header>
       </Fragment>
     

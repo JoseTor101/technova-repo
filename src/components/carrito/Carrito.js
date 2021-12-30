@@ -1,4 +1,4 @@
-import React from 'react';
+{/*import React from 'react';
 import Card from "../images/phonewallpaper1.jpg"
 
 const Carrito = () => {
@@ -35,4 +35,4 @@ const Carrito = () => {
     )
 }
 
-export default Carrito;
+export default Carrito;*/}
