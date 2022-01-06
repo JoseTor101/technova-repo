@@ -1,5 +1,5 @@
 import React from "react";
-import Producto from "./Producto.js";
+import Producto from "../Producto.js";
 
 const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => (
     <div>

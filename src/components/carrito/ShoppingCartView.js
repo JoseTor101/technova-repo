@@ -1,6 +1,6 @@
 import React,  { useState, Fragment } from "react";
-import Header from "../components/Header";
-import Producto from "./Producto.js";
+import Header from "../Header";
+import Producto from "../Producto.js";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
 const ShoppingCartView = () => {
    
