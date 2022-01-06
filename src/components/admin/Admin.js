@@ -8,6 +8,7 @@ const Admin = () => {
           <h1>Página del administrador. Bienvenido!</h1>
           <hr></hr>
           <h2>¿Qué desea hacer hoy?</h2>
+         <p>Total de productos en base de datos: #</p>
           <ul> 
               <li><button>Consultar</button>
               <ol>
