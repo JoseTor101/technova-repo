@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { ProductsComponent } from '../components/ProductsComponent';
-import ShoppingCartView from "../components/ShoppingCartView";
-import AXIOS from '../environment/AXIOS_CONFIG';
+import React from "react";
+import ShoppingCartView from "../components/carrito/ShoppingCartView";
 
 export const ShoppingCart = () => {
     

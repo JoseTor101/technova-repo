@@ -1,5 +1,5 @@
 import React from "react";
-import Producto from "./Producto.js";
+import Producto from "../Producto.js";
 
 const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => (
     <div>
@@ -10,13 +10,13 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => (
             <p>No elementos en el carrito</p>
             
         : carrito.map(producto => (
-        <Producto 
-          key={producto.id}
-          producto={producto}
-          carrito={carrito}
-          agregarProducto={agregarProducto}
-        />
-      ))}
+         <Producto 
+           key={producto.id}
+           producto={producto}
+           carrito={carrito}
+           agregarProducto={agregarProducto}
+         />
+       ))}
     </div>
 )
 export default ShoppingCartIndividualStructure;

@@ -1,16 +1,16 @@
 import React,  { useState, Fragment } from "react";
-import Header from "../components/Header";
-import Producto from "./Producto.js";
+import Header from "../Header";
+import Producto from "../Producto.js";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
 const ShoppingCartView = () => {
-
+   
 
   //Crear listado de productos
   const [ productos, guardarProductos ] = useState([
     { id: 1, nombre: 'Camisa ReactJS', precio: 50 },
-    { id: 2, nombre: 'Camisa VueJS', precio: 100 },
-    { id: 3, nombre: 'Camisa Node.js', precio: 120 },
-    { id: 4, nombre: 'Camisa Angular', precio: 135 },
+    { id: 2, nombre: 'Camisa VueJS', precio: 50 },
+    { id: 3, nombre: 'Camisa Node.js', precio: 50 },
+    { id: 4, nombre: 'Camisa Angular', precio: 50 },
   
   ]);
   
@@ -22,24 +22,31 @@ const ShoppingCartView = () => {
   return (
   <Fragment>
     <div className="shoppingCartBackground">
-      <Header />
-      <div className="shoppingCartProducts">
-          <div className="shoppingCartProductsHeader">
-            <div id="productAmount">
-              <p id="productAmountText">
-                Productos en carrito({carrito.length}) (imagen de carrito)
-              </p>
-            </div>
-          </div>
+       <Header />
+       <div className="shoppingCartProducts">
+           <div className="shoppingCartProductsHeader">
+             <div id="productAmount">
+               <p id="productAmountText">
+                 Productos en carrito({carrito.length}) (imagen de carrito)
+               </p>
+             </div>
+           </div>
 
-          <div className="shoppingProductsList">
-            <ShoppingCartIndividualStructure 
+           <div className="shoppingProductsList">
+            
+             {/* <div className="detailProductShoppingCart">
+               <div className="detailProductImg"></div>
+               <div className="detailProductName">Nombre</div>
+               <div className="detailProductDescription">Descripcion</div>
+               <div className="detailProductPrice">Precio</div>
+             </div> */}
+             <ShoppingCartIndividualStructure 
               carrito={carrito}
               agregarProducto={agregarProducto}/>
             
-          </div>
-        </div>
-      </div>
+           </div>
+         </div>
+       </div>
       <h1>Tienda virtual</h1>
       <h2>Lista de productos</h2>
       {productos.map(producto => (
