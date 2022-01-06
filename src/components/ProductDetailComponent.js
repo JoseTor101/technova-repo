@@ -3,7 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 
 export const ProductDetailComponent = ({product, variants}) => {
   console.log(product); 
-  //Agrrgar función para separar las unidades del precio
+  //Agregar función para separar las unidades del precio
+
+  function separatePrice(product) {
+    var price = product.precio;
+    var priceAssigned= price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+    return priceAssigned
+  };
+
+  
+
   return (
 
     <div className="individualProductBackground">
