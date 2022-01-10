@@ -1221,4 +1221,31 @@ hr.blueLine {
   padding-left: 1vw;
   border: 1px solid black;
 }
+
+.headerMenu ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-left: -28px;
+}
+
+.headerMenu li a {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.headerMenu li a:hover {
+  background-color: #434343;
+}
+
+.headerMenu > li {
+  float: left;
+}
+
+.headerMenu:hover > ul {
+  display: block;
+}
 /*# sourceMappingURL=App.css.map */

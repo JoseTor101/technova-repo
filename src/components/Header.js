@@ -25,8 +25,14 @@ const Header = () => {
 
         <div className="header_side_right">
           <nav className="navHeader">
-            <a href="#jump_start" className="a_items_header">
-              Inicio
+            <a href="/" className="a_items_header headerMenu">
+              Categorias
+              <ul className="headerA">
+                <li><a href="/tvs">Televisores</a></li>
+                <li><a href="/computers">Computadores</a></li>
+                <li><a href="/smartphones">Celulares</a></li>
+                <li><a href="/gadgets">Accesorios</a></li>
+              </ul>
             </a>
             
             <a href="#jump_about_us" className="a_items_header">
