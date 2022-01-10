@@ -12,6 +12,9 @@ const Admin = () => {
 
       <div>Espacio que varia según la opción seleccionada</div>
       <p>Total de productos en base de datos: #</p>
+
+      <div className="topAdmin"></div>
+      <div className="bottomAdmin"></div>
       <ul>
         <li>
           <button>Consultar</button>

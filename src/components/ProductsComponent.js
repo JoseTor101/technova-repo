@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Header from "./Header";
+import Mancha from "../images/mancha.png"
 import { ProductComponent } from "./ProductComponent";
 
 export const ProductsComponent = ({ products, title }) => {
   return (
+    <Fragment>
+    <Header/>
     <div className="sectionBackground">
       <div className="sectionHeader">
         <p className="sectionTitle">{title}</p>
@@ -24,5 +28,6 @@ export const ProductsComponent = ({ products, title }) => {
       </div>
       <div className="moreProducts">Next =&gt;</div>
     </div>
+    </Fragment>
   );
 };

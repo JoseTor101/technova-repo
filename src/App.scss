@@ -210,12 +210,12 @@ hr.blueLine {
 
 
 .sectionHeader {
-  background-color: $principalBlue;
   min-height: 9vw;
   width: 100%;
-  margin-bottom: 10vh;
+  margin-top: 2vh;
   text-align: center;
-  
+  text-shadow: -1px 0 black, 0 1px black,
+	  1px 0 black, 0 -1px black;
 }
 
 
@@ -223,9 +223,11 @@ hr.blueLine {
   vertical-align: middle;
   font-size: 300%;
   transform: translate(0%,20%);
-  color: white;
+  color: $principalOrange;
   margin: 0; 
+  font-weight: bold;
 }
+
 
 .flexPanelProducts{
   display:flex;
@@ -994,6 +996,7 @@ hr.blueLine {
   list-style: none;
   display:none;
   position: absolute;
+  margin-top: 0px;
   margin-left: -28px;
 }
 .headerMenu li a {
