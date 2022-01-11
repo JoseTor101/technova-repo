@@ -35,7 +35,7 @@ const Header = () => {
               </ul>
             </a>
             
-            <a href="#jump_about_us" className="a_items_header">
+            <a href="/AboutUs" className="a_items_header">
               Sobre nosotros
             </a>
             <a href="#jump_contact" className="a_items_header">
