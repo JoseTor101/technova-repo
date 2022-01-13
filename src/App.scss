@@ -743,6 +743,10 @@ hr.blueLine {
 .info_footer {
   color: #ababab;
 }
+.info_footer h4 a {
+  text-decoration: none;
+  color: #ababab;
+}
 
 
 
@@ -1018,4 +1022,34 @@ hr.blueLine {
 
 .headerMenu:hover > ul{
   display: block;
+}
+
+
+.topAdmin{
+  border: 1px solid black;
+  height: 10vh;
+  width: 90vw;  
+  margin: auto;;
+}
+
+.containerAdminOption {
+  display: flex;
+  flex-direction: row;
+}
+
+.adminOption{
+  margin: auto;
+  width: 10vw;
+  height: 6vh;
+  background-color:rgb(78, 156, 55);
+  border: 1px dotted black;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bottomAdmin{
+  border: 1px solid black;
+  height: 10vh;
+  width: 90vw;
 }

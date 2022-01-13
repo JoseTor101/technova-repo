@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="info_footer">
               <h4>2651456</h4>
               <h4>305 963 8425</h4>
-              <h4>Technova@gmail.com</h4>
+              <h4><a href="mailto:Technovatecnologia@gmail.com?subject=Hola%20Technova!">Technovatecnologia@gmail.com</a></h4>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                 alt="redSocial"
               ></img>
             </a>
-            <a href="https://www.facebook.com/" target="blank">
+            <a href="https://facebook.com/profile.php?id=100077203895013" target="blank">
               <img
                 src={FacebookIcon}
                 className="icons_footer"

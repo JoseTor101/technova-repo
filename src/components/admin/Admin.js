@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import Header from "../Header";
 
 const Admin = () => {
+ 
+
   return (
     <Fragment>
       <Header />
@@ -13,7 +15,14 @@ const Admin = () => {
       <div>Espacio que varia según la opción seleccionada</div>
       <p>Total de productos en base de datos: #</p>
 
-      <div className="topAdmin"></div>
+      <div className="topAdmin">
+        <div className="containerAdminOption">
+          <div className="adminOption"><p>Consultar</p></div>
+          <div className="adminOption"><p>Agregar</p></div>
+          <div className="adminOption"><p>Modificar</p></div>
+          <div className="adminOption"><p>Eliminar</p></div>
+        </div>
+      </div>
       <div className="bottomAdmin"></div>
       <ul>
         <li>
