@@ -1027,9 +1027,9 @@ hr.blueLine {
 
 .topAdmin{
   border: 1px solid black;
-  height: 10vh;
+  height: auto;
   width: 90vw;  
-  margin: auto;;
+  margin: auto;
 }
 
 .containerAdminOption {
@@ -1040,16 +1040,17 @@ hr.blueLine {
 .adminOption{
   margin: auto;
   width: 10vw;
-  height: 6vh;
   background-color:rgb(78, 156, 55);
   border: 1px dotted black;
   color: black;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
 }
 
 .bottomAdmin{
   border: 1px solid black;
   height: 10vh;
   width: 90vw;
+  margin: auto;
 }

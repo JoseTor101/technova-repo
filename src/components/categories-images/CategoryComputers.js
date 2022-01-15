@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Computer from "../icons/ordenador-portatil.png";
+import Computer from "../../icons/ordenador-portatil.png";
 
 const CategorySmarthphones = () => {
   return (

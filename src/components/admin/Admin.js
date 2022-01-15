@@ -1,8 +1,14 @@
 import React, { Fragment } from "react";
 import Header from "../Header";
-
+import Loading from "./LoadingIcon";
 const Admin = () => {
- 
+  
+  const consultar = () => {
+      alert('Iniciando la consulta')
+  }
+
+  //Añadir lógica si el div está vació colocar un icono de cargando
+  // document.getElementById('consultar').addEventListener('click', consultar)
 
   return (
     <Fragment>
@@ -17,13 +23,15 @@ const Admin = () => {
 
       <div className="topAdmin">
         <div className="containerAdminOption">
-          <div className="adminOption"><p>Consultar</p></div>
-          <div className="adminOption"><p>Agregar</p></div>
-          <div className="adminOption"><p>Modificar</p></div>
-          <div className="adminOption"><p>Eliminar</p></div>
+          <div className="adminOption" id="Consultar" onClick={consultar}><p>Consultar</p></div>
+          <div className="adminOption" onClick="admin()"><p>Agregar</p></div>
+          <div className="adminOption" onClick="admin()"><p>Modificar</p></div>
+          <div className="adminOption" onClick="admin()"><p>Eliminar</p></div>
         </div>
       </div>
-      <div className="bottomAdmin"></div>
+      <div className="bottomAdmin">
+        <Loading></Loading>
+      </div>
       <ul>
         <li>
           <button>Consultar</button>
@@ -72,6 +80,7 @@ const Admin = () => {
           </b>
         </p>
       </ul>
+
     </Fragment>
   );
 };

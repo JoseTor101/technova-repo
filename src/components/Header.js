@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import ModalSI from "./ModalSI";
+import ModalSI from "./forms/ModalSI";
 import logo from "../icons/technova-logo1.jpg";
 import user from '../icons/user.png';
 
@@ -18,7 +18,7 @@ const Header = () => {
           <div className="divHeaderT">
             <img src={logo} alt="logo" height="auto" width="100vw"></img>
             <h1>
-              <a href="/">TECHNOVA</a>
+              <a href="/technova">TECHNOVA</a>
             </h1>
           </div>
         </div>

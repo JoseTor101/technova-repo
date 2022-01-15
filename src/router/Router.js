@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import StartingScreen from "../components/StartingScreen";
+import { Technova } from "../pages/Technova";
 import { Computers } from "../pages/Computers";
 import { Gadgets } from "../pages/Gadgets";
 import { ProductDetail } from "../pages/ProductDetail";
@@ -15,7 +15,7 @@ export const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/' component={StartingScreen} />
+                <Route exact path='/technova' component={Technova} />
                 <Route path='/computers' component={Computers} />
                 <Route path='/smartphones' component={Smartphones} />
                 <Route path='/tvs' component={Tvs} />

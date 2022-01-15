@@ -1,10 +1,10 @@
 import React from 'react';
-import promotedProduct1 from '../images/promocionado1.jpg';
-import promotedProduct2 from '../images/promocionado2.jpg';
-import promotedProduct3 from '../images/promocionado3.jpg';
-import promotedProduct4 from '../images/promocionado4.jpg';
-import promotedProduct5 from '../images/promocionado5.jpg';
-import promotedProduct6 from '../images/promocionado6.jpg';
+import promotedProduct1 from '../../images/promocionado1.jpg';
+import promotedProduct2 from '../../images/promocionado2.jpg';
+import promotedProduct3 from '../../images/promocionado3.jpg';
+import promotedProduct4 from '../../images/promocionado4.jpg';
+import promotedProduct5 from '../../images/promocionado5.jpg';
+import promotedProduct6 from '../../images/promocionado6.jpg';
 
 const PromotedProducts = () => {
     return <div className="div_promoted_products">

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import television from "../icons/television.png";
+import television from "../../icons/television.png";
 
 const CategoryTvs = () => {
   return (

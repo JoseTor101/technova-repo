@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { ProductDetailComponent } from "../components/ProductDetailComponent";
+import { ProductDetailComponent } from "../components/products/ProductDetailComponent";
 import AXIOS from '../environment/AXIOS_CONFIG';
 import { RESOURCE_URL } from '../environment/RESOURCE_URL';
 

@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header'; 
 import SlideShowStartingScreen from './ImageSliderStartingScreen';
-import ProductCategories from './ProductCategoriesSection';
-import PromotedProducts from './PromotedProducts';
+import ProductCategories from './products/ProductCategoriesSection';
+import PromotedProducts from './products/PromotedProducts';
 
 const StartingScreen = () => {
 
