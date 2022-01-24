@@ -23,13 +23,13 @@ export const ProductsComponent = ({ products, title }) => {
         </div>
 
         <div className="RightPanelProducts">
-           {/* {!products ? (
+          {!products ? (
             <h4>Cargando...</h4>
           ) : (
             products?.map((product) => (
               <ProductComponent product={product} key={product?.id} />
             ))
-          )}  */}
+          )}  
 
         </div>
       </div>

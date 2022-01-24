@@ -264,13 +264,8 @@ header .cart span {
   vertical-align: middle;
   font-size: 300%;
   -webkit-transform: translate(0%, 20%);
-<<<<<<< HEAD
-  transform: translate(0%, 20%);
-  color: white;
-=======
           transform: translate(0%, 20%);
   color: #ff9800;
->>>>>>> jose
   margin: 0;
   font-weight: bold;
 }
