@@ -1,7 +1,9 @@
 import React,  { useState, Fragment } from "react";
 import Header from "../Header";
-import Producto from "../products/Producto";
+import Producto from "./Producto";
+import Footer from "../Footer";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
+
 const ShoppingCartView = () => {
    
 
@@ -26,6 +28,7 @@ const ShoppingCartView = () => {
        <div className="shoppingCartProducts">
            <div className="shoppingCartProductsHeader">
              <div id="productAmount">
+               {/* Agregar el icono de carrito con boxicons */}
                <p id="productAmountText">
                  Productos en carrito({carrito.length}) (imagen de carrito)
                </p>
@@ -33,13 +36,7 @@ const ShoppingCartView = () => {
            </div>
 
            <div className="shoppingProductsList">
-            
-             {/* <div className="detailProductShoppingCart">
-               <div className="detailProductImg"></div>
-               <div className="detailProductName">Nombre</div>
-               <div className="detailProductDescription">Descripcion</div>
-               <div className="detailProductPrice">Precio</div>
-             </div> */}
+           
              <ShoppingCartIndividualStructure 
               carrito={carrito}
               agregarProducto={agregarProducto}/>
@@ -59,8 +56,7 @@ const ShoppingCartView = () => {
           />
       ))}
 
-      
-
+     <Footer></Footer> 
   </Fragment>
   );
 }

@@ -11,6 +11,9 @@ $principalOrange: #ff9800;
   display: block;
   overflow-x: hidden;
 }
+
+// Header
+
 .header_startingScreen {
   background-color: $principalBlue;
   color: white;
@@ -147,6 +150,7 @@ hr.blueLine {
   color: white;
 }
 
+// Product Categories
 .background_section_product_categories {
   background-image: url(../src/images/particles1.gif);
   min-height: 37vh;
@@ -202,10 +206,12 @@ hr.blueLine {
   }
 }
 
+
+//View products for each category
+
 .sectionBackground {
   height: auto;
   width: 100%;
-  // overflow: auto;
 }
 
 
@@ -256,6 +262,7 @@ hr.blueLine {
   justify-content: center;
 }
 
+//View individual product
 
 .cardIndividualProductTop{
   height: 7vh;
@@ -635,6 +642,7 @@ hr.blueLine {
   }
 }
 
+
 .promoted5 {
   background-color: #ddd;
 }
@@ -642,6 +650,37 @@ hr.blueLine {
   text-decoration: none;
 }
 
+.promotedProducts{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11vh;
+}
+
+.topPromoted{
+  flex:50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgPromoted{
+  margin: auto;
+}
+
+.promotedImg{
+  height: 45vh;
+  width: auto;
+  margin: 5px 10px 5px 30px;
+  box-shadow: 10px 10px 10px #484545;
+}
+.bottomPromoted{
+  flex:50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .title_about_us {
   display: flex;
@@ -920,10 +959,6 @@ hr.blueLine {
   border: 1px solid black;
 }
 
-.shoppingCartBackground{
-  width: 100vw;
-  height: 100vh;
-}
 .shoppingCartProducts{
   width: 80vw;
   height: 65vh;
@@ -1042,15 +1077,68 @@ hr.blueLine {
   width: 10vw;
   background-color:rgb(78, 156, 55);
   border: 1px dotted black;
-  color: black;
+  color: white;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .bottomAdmin{
   border: 1px solid black;
-  height: 10vh;
+  min-height: 60vh;
   width: 90vw;
   margin: auto;
 }
+
+.containerLoading{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.loadingMessage{
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+
+// .AppTry {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

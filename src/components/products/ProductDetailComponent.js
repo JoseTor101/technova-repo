@@ -1,18 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export const ProductDetailComponent = ({product, variants}) => {
+export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
   console.log(product); 
   //Agregar función para separar las unidades del precio
-
-  function separatePrice(product) {
-    var price = product.precio;
-    var priceAssigned= price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
-    return priceAssigned
-  };
-
+  //Agregar producto al carrito
   
-
   return (
 
     <div className="individualProductBackground">
@@ -34,7 +27,7 @@ export const ProductDetailComponent = ({product, variants}) => {
             <hr></hr>
             <b>Descripcion:</b> {product.descripcion}
             <hr></hr>
-             { variants.map((variant)=>(
+             {variants.map((variant)=>(
                <span>
                  <b>{variant.charAt(0).toUpperCase() + variant.slice(1)}:</b> {product[variant]}
                  <hr></hr>
@@ -47,7 +40,7 @@ export const ProductDetailComponent = ({product, variants}) => {
       </div>
       <div className="individualProductShop">
         <div className="individualProductBuy"><p>Comprar</p></div>
-        <div className="individualProductCar"><Link to={`/shoppingCart`}><p>Añadir al carrito</p></Link></div>
+        <div className="individualProductCar"><p>Añadir al carrito</p></div>
         
       </div>
     </div>

@@ -1,9 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ProductComponent } from "./ProductComponent";
 
 export const ProductsComponent = ({ products, title }) => {
+  //Agregar función para que se promocione una imagen diferente cada vez que se entre
+  // const promotedImg = () => {
+  // }
+
+  console.log(products);
+
   return (
     <Fragment>
     <Header/>
@@ -17,13 +23,14 @@ export const ProductsComponent = ({ products, title }) => {
         </div>
 
         <div className="RightPanelProducts">
-           {!products ? (
-            <i className="fas fa-sync fa-10x fa-spin"></i>
+           {/* {!products ? (
+            <h4>Cargando...</h4>
           ) : (
             products?.map((product) => (
               <ProductComponent product={product} key={product?.id} />
             ))
-          )} 
+          )}  */}
+
         </div>
       </div>
       <div className="moreProducts">Next =&gt;</div>

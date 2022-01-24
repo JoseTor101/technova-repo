@@ -1,24 +1,21 @@
-import React, { Fragment } from "react";
+import { render } from "@testing-library/react";
+import React, { Fragment, lazy, Suspense } from "react";
 import Header from "../Header";
-import Loading from "./LoadingIcon";
+import Footer from "../Footer";
+import CrudTry from "./CrudTry";
+// const Loading = lazy((()=>import('./LoadingIcon')));
+
 const Admin = () => {
   
   const consultar = () => {
       alert('Iniciando la consulta')
   }
 
-  //Añadir lógica si el div está vació colocar un icono de cargando
-  // document.getElementById('consultar').addEventListener('click', consultar)
-
+  
   return (
     <Fragment>
       <Header />
-      <h1>Página del administrador. Bienvenido!</h1>
-      <hr></hr>
       <h2>¿Qué desea hacer hoy?</h2>
-      <div className="options">Opciones:</div>
-
-      <div>Espacio que varia según la opción seleccionada</div>
       <p>Total de productos en base de datos: #</p>
 
       <div className="topAdmin">
@@ -30,7 +27,7 @@ const Admin = () => {
         </div>
       </div>
       <div className="bottomAdmin">
-        <Loading></Loading>
+
       </div>
       <ul>
         <li>
@@ -80,7 +77,11 @@ const Admin = () => {
           </b>
         </p>
       </ul>
+      <Suspense fallback={<div className="containerLoading"> <p className="loadingMessage">Cargando ...</p></div>}>
+        <CrudTry/>
+        </Suspense>
 
+      <Footer/>
     </Fragment>
   );
 };
