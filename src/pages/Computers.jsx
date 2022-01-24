@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ProductsComponent } from '../components/ProductsComponent';
+import { ProductsComponent } from '../components/products/ProductsComponent';
 import AXIOS from '../environment/AXIOS_CONFIG';
 import { RESOURCE_URL } from '../environment/RESOURCE_URL';
 

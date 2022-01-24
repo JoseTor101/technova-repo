@@ -1,8 +1,9 @@
 import React from "react";
-import Producto from "../Producto.js";
+import Producto from "./Producto"
 
-const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => (
-    <div>
+const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
+    
+    return(<div>
         <h2>Tu carrito de compras</h2>
 
         {carrito.length === 0
@@ -15,8 +16,9 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => (
            producto={producto}
            carrito={carrito}
            agregarProducto={agregarProducto}
-         />
+         /> 
        ))}
-    </div>
-)
+    </div>);
+}
+
 export default ShoppingCartIndividualStructure;

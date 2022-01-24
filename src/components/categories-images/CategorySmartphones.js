@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import Smartphones from "../icons/llamada-de-telefono-inteligente.png";
+import Smartphones from "../../icons/llamada-de-telefono-inteligente.png";
 
 const CategorySmartphones = () => {
   return (

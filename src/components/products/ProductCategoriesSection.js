@@ -1,8 +1,8 @@
 import React from "react";
-import CategoryComputers from "./CategoryComputers";
-import CategoryTvs from "./CategoryTvs";
-import CategorySmartphones from "./CategorySmartphones";
-import CategoryGadgets from "./CategoryGadgets";
+import CategoryComputers from "../categories-images/CategoryComputers";
+import CategoryTvs from "../categories-images/CategoryTvs";
+import CategorySmartphones from "../categories-images/CategorySmartphones";
+import CategoryGadgets from "../categories-images/CategoryGadgets";
 import { Link } from "react-router-dom";
 
 const ProductCategories = () => {

@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from "react";
-import ModalSI from "./ModalSI";
+import ModalSI from "./forms/ModalSI";
 import logo from "../icons/technova-logo1.jpg";
 import user from '../icons/user.png';
-import { Link } from "react-router-dom";
-import "boxicons";
 
 const Header = () => { 
   
@@ -20,18 +18,25 @@ const Header = () => {
           <div className="divHeaderT">
             <img src={logo} alt="logo" height="auto" width="100vw"></img>
             <h1>
-              <a href="/">TECHNOVA</a>
+              <a href="/technova">TECHNOVA</a>
             </h1>
           </div>
         </div>
 
         <div className="header_side_right">
           <nav className="navHeader">
-            <a href="#jump_start" className="a_items_header">
-              Inicio
+            <a href="/" className="a_items_header headerMenu">
+              Categorias
+              <ul className="headerA">
+                <li><a href="/tvs">Televisores</a></li>
+                <li><a href="/computers">Computadores</a></li>
+                <li><a href="/smartphones">Celulares</a></li>
+                <li><a href="/gadgets">Accesorios</a></li>
+                <li><a href="/adminpage">Admin</a></li>
+              </ul>
             </a>
             
-            <a href="#jump_about_us" className="a_items_header">
+            <a href="/AboutUs" className="a_items_header">
               Sobre nosotros
             </a>
             <a href="#jump_contact" className="a_items_header">
@@ -41,13 +46,11 @@ const Header = () => {
           </nav>
         </div> 
 
-        <Link to={`/shoppingCart`}>
-          <div className="cart">
+          {/* <div className="cart">
           <box-icon name="cart"></box-icon>
           <span className="item__total">0</span>
-          </div> 
-        </Link>
-        
+        </div>  */}
+
       </header>
       </Fragment>
     

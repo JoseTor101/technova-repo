@@ -28,7 +28,7 @@ const Forms_Signup = () => {
         Information.userName != "" && 
         Information.password != "" ){
 
-          formData.append("nombre", Information.names)
+          formData.append("nombres", Information.names)
           formData.append("apellidos", Information.lastNames)
           formData.append("correo_electronico", Information.email)      
           formData.append("direccion", Information.adress)      
@@ -126,7 +126,7 @@ const Forms_Signup = () => {
             placeholder="Cree una contraseña"
             type="password"
             name="password"
-            minlength="8"
+            minLength="8"
             onChange={HandleInputChange}
             required
           ></input>

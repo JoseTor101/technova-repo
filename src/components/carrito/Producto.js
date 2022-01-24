@@ -24,12 +24,6 @@ const Producto = ({producto, carrito, agregarProducto, productos}) => {
         <div>
             <h2>{nombre}</h2>
             <p>${precio}</p>
-            {/* <div className="detailProductShoppingCart">
-               <div className="detailProductImg"></div>
-               <div className="detailProductName">Nombre</div>
-               <div className="detailProductDescription">Descripcion</div>
-               <div className="detailProductPrice">Precio</div>
-             </div> */}
             
             {productos 
             ?

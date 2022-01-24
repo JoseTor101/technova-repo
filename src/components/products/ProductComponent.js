@@ -2,7 +2,9 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export const ProductComponent = ({ product }) => {
-    const pathName = useLocation().pathname.slice(1);
+
+  const pathName = useLocation().pathname.slice(1);
+  
   return (
         <div className="productContainerDiv">
           <div className="cardIndividualProductTop">

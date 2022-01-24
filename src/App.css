@@ -252,20 +252,27 @@ header .cart span {
 }
 
 .sectionHeader {
-  background-color: #0d2c5b;
   min-height: 9vw;
   width: 100%;
-  margin-bottom: 10vh;
+  margin-top: 2vh;
   text-align: center;
+  text-shadow: -1px 0 black, 0 1px black,
+ 1px 0 black, 0 -1px black;
 }
 
 .sectionTitle {
   vertical-align: middle;
   font-size: 300%;
   -webkit-transform: translate(0%, 20%);
+<<<<<<< HEAD
   transform: translate(0%, 20%);
   color: white;
+=======
+          transform: translate(0%, 20%);
+  color: #ff9800;
+>>>>>>> jose
   margin: 0;
+  font-weight: bold;
 }
 
 .flexPanelProducts {
@@ -793,6 +800,63 @@ header .cart span {
   text-decoration: none;
 }
 
+.promotedProducts {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 11vh;
+}
+
+.topPromoted {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgPromoted {
+  margin: auto;
+}
+
+.promotedImg {
+  height: 45vh;
+  width: auto;
+  margin: 5px 10px 5px 30px;
+  -webkit-box-shadow: 10px 10px 10px #484545;
+          box-shadow: 10px 10px 10px #484545;
+}
+
+.bottomPromoted {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .title_about_us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,6 +1001,11 @@ header .cart span {
 }
 
 .info_footer {
+  color: #ababab;
+}
+
+.info_footer h4 a {
+  text-decoration: none;
   color: #ababab;
 }
 
@@ -1166,11 +1235,6 @@ header .cart span {
   border: 1px solid black;
 }
 
-.shoppingCartBackground {
-  width: 100vw;
-  height: 100vh;
-}
-
 .shoppingCartProducts {
   width: 80vw;
   height: 65vh;
@@ -1254,6 +1318,79 @@ header .cart span {
   border: 1px solid black;
 }
 
-fab: {
+.headerMenu ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -28px;
+}
+
+.headerMenu li a {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.headerMenu li a:hover {
+  background-color: #434343;
+}
+
+.headerMenu > li {
+  float: left;
+}
+
+.headerMenu:hover > ul {
+  display: block;
+}
+
+.topAdmin {
+  border: 1px solid black;
+  height: auto;
+  width: 90vw;
+  margin: auto;
+}
+
+.containerAdminOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.adminOption {
+  margin: auto;
+  width: 10vw;
+  background-color: #4e9c37;
+  border: 1px dotted black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.bottomAdmin {
+  border: 1px solid black;
+  min-height: 60vh;
+  width: 90vw;
+  margin: auto;
+}
+
+.containerLoading {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.loadingMessage {
+  font-size: large;
+  font-weight: bold;
+  color: black;
 }
 /*# sourceMappingURL=App.css.map */
