@@ -1110,42 +1110,50 @@ hr.blueLine {
   color: black;
 }
 
+.itemCart {
+  height: 30vh;
+  width: 96%;
+  border: 1px solid black;
+  background-color:#f5ede2;
+  display: flex;
+  flex-direction: row;
+}
 
-// .AppTry {
-//   text-align: center;
-// }
+.itemImgCart {
+  flex: 30%;
+  border: 1px solid black;
+}
 
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
+.imgCart{
+  height: 20vh;
+  margin: auto;
+  margin: 4vh 0 0 4vw;
+}
 
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
+.itemFeactures{
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.itemFeactures > div > p{
+  margin-left: 2vw;
+  font-weight: bold;
+}
 
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
+.itemName{
+  font-size: large;
+  border: 1px solid black;
+  flex: 50%;
+  background-color:#484545;
+  color: white;
+}
+.itemPrice{
+  flex: 30%;
+}
+.itemAmount{
+  flex: 20%;
+}
 
-// .App-link {
-//   color: #61dafb;
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+.moreDetailsCart {
+  cursor: pointer;
+}

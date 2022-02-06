@@ -1370,4 +1370,75 @@ hr.blueLine {
   font-weight: bold;
   color: black;
 }
+
+.itemCart {
+  height: 30vh;
+  width: 96%;
+  border: 1px solid black;
+  background-color: #f5ede2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.itemImgCart {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  border: 1px solid black;
+}
+
+.imgCart {
+  height: 20vh;
+  margin: auto;
+  margin: 4vh 0 0 4vw;
+}
+
+.itemFeactures {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.itemFeactures > div > p {
+  margin-left: 2vw;
+  font-weight: bold;
+}
+
+.itemName {
+  font-size: large;
+  border: 1px solid black;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #484545;
+  color: white;
+}
+
+.itemPrice {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.itemAmount {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+.moreDetailsCart {
+  cursor: pointer;
+}
 /*# sourceMappingURL=App.css.map */

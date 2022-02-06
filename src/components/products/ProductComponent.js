@@ -7,6 +7,7 @@ export const ProductComponent = ({ product }) => {
   const pathName = useLocation().pathname.slice(1);
 
   const [Item, setItem] = useLocalStorage("item", []);
+  var precio = new Intl.NumberFormat('es-ES',{style: 'currency', currency: 'COP'}).format(product.precio);
 
   return (
     <div className="productContainerDiv">
@@ -31,7 +32,7 @@ export const ProductComponent = ({ product }) => {
               ></box-icon>
             </div>
             <div className="cardPrice">
-              <b>Precio: </b>$ {product.precio}
+              <b>Precio: </b>$ {precio}
             </div>
             <div className="cardBrand">
               <b>Marca: </b> {product.marca}
