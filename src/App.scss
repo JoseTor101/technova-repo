@@ -802,7 +802,7 @@ hr.blueLine {
 }
 
 .cardIndividualProductTop{
-  height: 7vh;
+  min-height: 7vh;
   padding-bottom: 8%;
   font-weight: bold;
   border: 1px solid black;
@@ -852,19 +852,26 @@ hr.blueLine {
 }
 
 .cardMoreDetailsCenter{
-  text-align: center;
+  
   height: 7vh;
- 
+  display: flex;
+  flex-direction: row;
   border: 1px dashed black;
   background: $principalOrange;
   p{
+    text-align: center;
     color: white;
     margin: 0;
     margin-top: 5%; 
-    
+    margin-left: 8vw;
   }
 }
-
+.moreDetailsCart {
+  position: relative;
+  text-align: center;
+  background-color: #484545;
+  width: 5vw ;
+}
 
 .individualProductBackground{
   border: 1px solid black;
