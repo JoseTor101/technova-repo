@@ -27,7 +27,7 @@ const Forms = ({userPhotoState}) => {
 
   const sendData = (e) => {
     e.preventDefault(); 
-      fetch("http://localhost/Technova/user.php?" + "user_name" + "=" + '"' + Information.user + '"' + "&" + "user_password" + "=" + '"' + Information.password +'"',{
+      fetch("https://technova-back.herokuapp.com/user.php?" + "user_name" + "=" + '"' + Information.user + '"' + "&" + "user_password" + "=" + '"' + Information.password +'"',{
         method: "GET",
         headers: {
           'Accept': 'application/json'

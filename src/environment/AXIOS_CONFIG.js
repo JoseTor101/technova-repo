@@ -1,3 +1,3 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'http://localhost/technova' });
+export default axios.create({ baseURL: 'https://technova-back.herokuapp.com' });

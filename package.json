@@ -2,7 +2,7 @@
   "name": "technova",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luipolanco1229.github.io/technova",
+  "homepage": "https://technova",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
