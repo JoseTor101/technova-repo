@@ -15,7 +15,7 @@ export const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/technova' component={Technova} />
+                <Route exact path='/' component={Technova} />
                 <Route path='/computers' component={Computers} />
                 <Route path='/smartphones' component={Smartphones} />
                 <Route path='/tvs' component={Tvs} />
