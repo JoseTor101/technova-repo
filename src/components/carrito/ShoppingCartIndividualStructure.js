@@ -8,7 +8,7 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
     return(<div>
         <h2>Tu carrito de compras</h2>
 
-        {item.length === 0
+        {item === null
         ?
             <p>No elementos en el carrito</p>
             

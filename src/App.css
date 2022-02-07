@@ -248,14 +248,11 @@ hr.blueLine {
 }
 
 .leftPanelProducts {
-  height: 100%;
   margin-left: 2vw;
   -webkit-box-flex: 25%;
       -ms-flex: 25%;
           flex: 25%;
   height: 100vh;
-  background-color: beige;
-  border: 1px solid black;
 }
 
 .RightPanelProducts {
