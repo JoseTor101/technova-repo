@@ -1215,7 +1215,7 @@ hr.blueLine {
 .shoppingCartProducts {
   width: 80vw;
   height: 65vh;
-  margin: 5vh 0 0 10vw;
+  margin: 5vh 0 10vh 10vw;
   -webkit-box-shadow: 0 1px 2px 0 black;
           box-shadow: 0 1px 2px 0 black;
 }

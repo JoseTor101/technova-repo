@@ -7,14 +7,14 @@ import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
 const ShoppingCartView = () => {
    
 
-  //Crear listado de productos
-  const [ productos, guardarProductos ] = useState([
-    { id: 1, nombre: 'Camisa ReactJS', precio: 50 },
-    { id: 2, nombre: 'Camisa VueJS', precio: 50 },
-    { id: 3, nombre: 'Camisa Node.js', precio: 50 },
-    { id: 4, nombre: 'Camisa Angular', precio: 50 },
+  // //Crear listado de productos
+  // const [ productos, guardarProductos ] = useState([
+  //   { id: 1, nombre: 'Camisa ReactJS', precio: 50 },
+  //   { id: 2, nombre: 'Camisa VueJS', precio: 50 },
+  //   { id: 3, nombre: 'Camisa Node.js', precio: 50 },
+  //   { id: 4, nombre: 'Camisa Angular', precio: 50 },
   
-  ]);
+  // ]);
   
   //State para un carrito de compras
   const [ carrito, agregarProducto] = useState([]);
@@ -44,9 +44,7 @@ const ShoppingCartView = () => {
            </div>
          </div>
        </div>
-      <h1>Tienda virtual</h1>
-      <h2>Lista de productos</h2>
-      {productos.map(producto => (
+      {/* {productos.map(producto => (
         <Producto
         key={producto.id}
         producto={producto}
@@ -54,7 +52,7 @@ const ShoppingCartView = () => {
         carrito={carrito}
         agregarProducto={agregarProducto}
           />
-      ))}
+      ))} */}
 
      <Footer></Footer> 
   </Fragment>

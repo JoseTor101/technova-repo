@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
-  console.log(product); 
-  //Agregar función para separar las unidades del precio
-  //Agregar producto al carrito
   
   return (
 

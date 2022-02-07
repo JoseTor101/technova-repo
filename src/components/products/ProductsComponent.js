@@ -1,12 +1,21 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ProductComponent } from "./ProductComponent";
 
 export const ProductsComponent = ({ products, title }) => {
-  //Agregar función para que se promocione una imagen diferente cada vez que se entre
-  // const promotedImg = () => {
+  // const [image, setImage] = useState();
+
+  // const images= [
+  //   "http://pm1.narvii.com/6164/80165b49cd0a6dd44c43b957e17b1975cde81811_00.jpg",
+  //   "https://www.eldibujante.top/wp-content/uploads/2020/08/tip-06-kawaii.jpg"];
+  
+  // function changeImage () {
+  //   const randomNumber = Math.floor(Math.random() * images.length);
+  //         this.setImage({randomNumber});
   // }
+
+    
 
   console.log(products);
 
@@ -19,7 +28,7 @@ export const ProductsComponent = ({ products, title }) => {
       </div>
       <div className="flexPanelProducts">
         <div className="leftPanelProducts">
-          <div className="optionsLeftPanel"><p>Agregar lógica para que cada vez que se entre se cambie la imagen promocionada, mirar la posibilidad de filtros de búsqueda</p></div>
+          <div className="optionsLeftPanel"><img src="a" alt=""></img><button></button></div>
         </div>
 
         <div className="RightPanelProducts">
