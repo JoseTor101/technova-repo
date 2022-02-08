@@ -1433,6 +1433,20 @@ hr.blueLine {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cartDelete {
+  cursor: pointer;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: 2vw;
 }
 
 .moreDetailsCart {

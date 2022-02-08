@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
-  
+  var precio = new Intl.NumberFormat('es-ES',{style: 'currency', currency: 'COP'}).format(product.precio);
+
   return (
 
     <div className="individualProductBackground">
@@ -20,7 +21,7 @@ export const ProductDetailComponent = ({product, variants, producto, carrito, ag
           <div className="individualProductFeacturesTable">
             <b>Marca:</b> {product.marca}
             <hr></hr>
-            <b>Precio:</b> {product.precio}
+            <b>Precio:</b>$ {precio}
             <hr></hr>
             <b>Descripcion:</b> {product.descripcion}
             <hr></hr>

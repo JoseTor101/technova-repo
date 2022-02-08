@@ -1,4 +1,5 @@
 import React,  { useState, Fragment } from "react";
+import 'boxicons';
 import Header from "../Header";
 import Producto from "./Producto";
 import Footer from "../Footer";
@@ -28,9 +29,8 @@ const ShoppingCartView = () => {
        <div className="shoppingCartProducts">
            <div className="shoppingCartProductsHeader">
              <div id="productAmount">
-               {/* Agregar el icono de carrito con boxicons */}
                <p id="productAmountText">
-                 Productos en carrito({carrito.length}) (imagen de carrito)
+                 Productos en carrito({carrito.length}) <box-icon type='solid' name='cart'></box-icon>
                </p>
              </div>
            </div>
@@ -44,15 +44,6 @@ const ShoppingCartView = () => {
            </div>
          </div>
        </div>
-      {/* {productos.map(producto => (
-        <Producto
-        key={producto.id}
-        producto={producto}
-        productos={productos}
-        carrito={carrito}
-        agregarProducto={agregarProducto}
-          />
-      ))} */}
 
      <Footer></Footer> 
   </Fragment>
