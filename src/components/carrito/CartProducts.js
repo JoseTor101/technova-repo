@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "boxicons";
 
 const CartProducts = (item) => {
   const [suma, setSuma] = useState(0);
@@ -20,6 +19,8 @@ const CartProducts = (item) => {
   function clearCart(){
     window.localStorage.clear('item');
   }
+
+    
   
   return (
     <div>
@@ -39,8 +40,8 @@ const CartProducts = (item) => {
               Cantidad <button onClick={() => setSuma(suma + 1)}>+</button>{" "}
               {suma} <button onClick={restar}>-</button>
             </p>
-            <div className="cartDelete" onClick={clearCart}>
-              <box-icon name="trash"></box-icon>
+            <div className="cartDelete" onClick={clearCart()} >
+              <img src="https://cdn-icons-png.flaticon.com/512/1017/1017530.png" alt="trashIcon"></img>
             </div>
           </div>
         </div>

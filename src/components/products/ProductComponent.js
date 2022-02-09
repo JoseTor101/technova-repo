@@ -7,6 +7,9 @@ export const ProductComponent = ({ product }) => {
   const pathName = useLocation().pathname.slice(1);
 
   const [Item, setItem] = useLocalStorage("item", []);
+  function agregado(){
+    alert('Producto agregado al carrito');
+  }
   var precio = new Intl.NumberFormat('es-ES',{style: 'currency', currency: 'COP'}).format(product.precio);
 
   return (
@@ -28,7 +31,7 @@ export const ProductComponent = ({ product }) => {
               <box-icon
                 type="solid"
                 name="cart-add"
-                onClick={() => setItem(product)}
+                onClick={() => {setItem(product); agregado()}}
               ></box-icon>
             </div>
             <div className="cardPrice">

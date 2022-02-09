@@ -10,7 +10,8 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
 
         {item === null
         ?
-            <p>No elementos en el carrito</p>
+            <div className="empty"><p>No elementos en el carrito</p>
+            </div>
             
         : item.map(producto => (
          <CartProducts 

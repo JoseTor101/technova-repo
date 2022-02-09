@@ -26,6 +26,7 @@ $principalOrange: #ff9800;
   align-items: center;
   cursor: pointer;
   position: relative;
+  z-index: 2;
 
   #title_store h1 a {
     text-decoration: none;
@@ -967,7 +968,6 @@ hr.blueLine {
 
 .shoppingCartProducts{
   width: 80vw;
-  height: 65vh;
   margin: 5vh 0 10vh 10vw;
   box-shadow: 0 1px 2px 0 rgb(0, 0, 0);
 }
@@ -1112,6 +1112,7 @@ hr.blueLine {
 .itemCart {
   height: 30vh;
   width: 96%;
+  margin: 10px 0 10px 0;
   border: 1px solid black;
   background-color:#f5ede2;
   display: flex;
@@ -1161,6 +1162,9 @@ hr.blueLine {
   margin-left: auto;
   margin-right: 2vw;
 }
+.cartDelete >  img{
+  height: 3vh;
+}
 
 
 .moreDetailsCart {
@@ -1176,4 +1180,8 @@ hr.blueLine {
   height: 8vh;
   margin-bottom: 3vh;
   padding-left: 2vw;
+}
+
+.empty {
+  margin-bottom: 35vh;
 }
