@@ -11,6 +11,7 @@ const CartProducts = (item) => {
     }
   }
   console.log(item);
+
   var total = new Intl.NumberFormat("es-ES", {
     style: "currency",
     currency: "COP",

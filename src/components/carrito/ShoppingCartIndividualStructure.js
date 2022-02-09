@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./UseLocalStorage";
 import CartProducts from "./CartProducts";
 
 const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
@@ -18,38 +18,7 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
            item={item}
          /> 
        ))} 
-        {/* {carrito.length === 0
-        ?
-            <p>No elementos en el carrito</p>
-            
-        : carrito.map(producto => (
-         <Producto 
-           key={producto.id}
-           producto={producto}
-           carrito={carrito}
-           agregarProducto={agregarProducto}
-         /> 
-       ))} 
-       {productos 
-        ?
-          (
         
-            <button 
-            type="button"
-            id="comprar"
-            onClick={ () => seleccionarProducto(id) }
-            >Comprar</button>
-           )
-        :
-           (
-            <button 
-            type="button"
-            id="comprar"
-            onClick={ () => eliminarProducto(id) }
-            >Eliminar</button>  
-           )}
-       */
-       }
     </div>);
 }
 

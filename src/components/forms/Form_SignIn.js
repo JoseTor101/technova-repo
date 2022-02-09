@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ModalSU from "./ModalSU";
+// import { storedDataLogin } from "./StoredDataLogin";
 
 const Forms = ({userPhotoState}) => {
   const [Information, setInformation] = useState({
@@ -8,7 +9,6 @@ const Forms = ({userPhotoState}) => {
   });
 
   const isUser = (user) => {
-    console.log(user)
     if(user === false){
       alert('No estás registrado')
       userPhotoState(false); 
@@ -35,11 +35,15 @@ const Forms = ({userPhotoState}) => {
       })
       .then(response => response.json())
       .then((user) => {
-        isUser(user); 
+        isUser(user);
+         console.log(user);
       }
       
       )
     }
+
+    
+    // const [storedData, setStoredData] = storedDataLogin("login", '');
 
   return (
     <div className="FormSignIn" onSubmit={sendData}>
@@ -67,7 +71,7 @@ const Forms = ({userPhotoState}) => {
           ></input>
         </div>
         <div clasName="div_send_sigIn">
-          <button className="Send_signIn" onClick={sendData}>
+          <button className="Send_signIn" onClick={sendData} >
             Iniciar sesión
           </button>
         </div>

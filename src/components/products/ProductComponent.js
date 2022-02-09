@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useLocalStorage } from "../carrito/useLocalStorage";
+import { useLocalStorage } from "../carrito/UseLocalStorage";
 import "boxicons";
 
 export const ProductComponent = ({ product }) => {
