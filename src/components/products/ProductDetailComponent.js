@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import ReactDOM from "react-dom"
 
 export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
   var precio = new Intl.NumberFormat('es-ES',{style: 'currency', currency: 'COP'}).format(product.precio);

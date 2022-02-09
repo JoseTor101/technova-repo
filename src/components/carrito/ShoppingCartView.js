@@ -4,6 +4,7 @@ import Header from "../Header";
 import Producto from "./Producto";
 import Footer from "../Footer";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
+import Payment from "./Payment";
 
 const ShoppingCartView = () => {
    
@@ -44,7 +45,7 @@ const ShoppingCartView = () => {
            </div>
          </div>
        </div>
-
+       <Payment></Payment>
      <Footer></Footer> 
   </Fragment>
   );

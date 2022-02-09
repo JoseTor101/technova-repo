@@ -71,7 +71,7 @@ const Forms_Signup = () => {
       <hr class="blueLine"></hr>
       <div className="Signup" onSubmit={sendData}>
         
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Nombres</p>
           <input
             placeholder="Ej. Miguel Ángel"
@@ -81,7 +81,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Apellidos</p>
           <input
             placeholder="Ej. Rivera Castillo"
@@ -91,7 +91,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Correo electrónico</p>
           <input
             placeholder="Ej. usuario@gmail.com"
@@ -101,7 +101,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Dirección</p>
           <input
             placeholder="Ej. Antioquia, Envigado. CL 12#34"
@@ -110,7 +110,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Nombre de usuario</p>
           <input
             placeholder="Ej. Miguela101"
@@ -120,7 +120,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="Items_form_signup">
+        <div className="Items_form_signup">
           <p>Contraseña</p>
           <input
             placeholder="Cree una contraseña"
@@ -131,7 +131,7 @@ const Forms_Signup = () => {
             required
           ></input>
         </div>
-        <div clasName="div_send_signUp">
+        <div className="div_send_signUp">
           <button className="Send_signUp" onClick={sendData}>
             Crear cuenta
           </button>
