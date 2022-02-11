@@ -1,11 +1,9 @@
-import { render } from "@testing-library/react";
 import React, { Fragment, lazy, Suspense } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import CrudTry from "./CrudTry";
 // const Loading = lazy((()=>import('./LoadingIcon')));
 
-const Admin = () => {
+const Admin = (products) => {
   
   const consultar = () => {
       alert('Iniciando la consulta')
@@ -77,9 +75,6 @@ const Admin = () => {
           </b>
         </p>
       </ul>
-      <Suspense fallback={<div className="containerLoading"> <p className="loadingMessage">Cargando ...</p></div>}>
-        <CrudTry/>
-        </Suspense>
 
       <Footer/>
     </Fragment>

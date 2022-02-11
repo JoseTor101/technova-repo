@@ -32,7 +32,6 @@ const Header = () => {
                 <li><a href="/computers">Computadores</a></li>
                 <li><a href="/smartphones">Celulares</a></li>
                 <li><a href="/gadgets">Accesorios</a></li>
-                <li><a href="/adminpage">Admin</a></li>
               </ul>
             </a>
             

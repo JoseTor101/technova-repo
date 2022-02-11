@@ -34,10 +34,10 @@ export default function Payment(){
 
     // var dolar = 3900;
     // var conversion = total / dolar ;
-    return(<div className="payment">
+    return(<div className="payment" id="payment">
         <p>Nuestra página aún está en versión beta! Pero puedes apoyar nuestro trabajo</p>
         <h3>Monto a donar: </h3>
-        <input type="number" onChange={handleChange} id="inputPayment"placeholder="Escriba el monto en dólares (USD)"></input>
+        <input type="number" min="0" onChange={handleChange} id="inputPayment"placeholder="Escriba el monto en dólares (USD)"></input>
         <PayPalButton
         createOrder={(data, actions) => createOrder(data, actions)}
         onApprove={(data, actions) => onApprove(data, actions)}

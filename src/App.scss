@@ -475,6 +475,10 @@ hr.blueLine {
   margin-top: 3vh; 
   text-align: center;
   border: 1px solid black;
+  cursor: pointer;
+}
+.individualProductCar::hover{
+  color: #0d2c5b;
 }
 
 @media screen and (max-width: 768px) {
@@ -956,6 +960,7 @@ hr.blueLine {
   margin-right: 5%;
   text-align: center;
   border: 1px solid black;
+  cursor: pointer;
 }
 .individualProductCar{
   background-color: $principalOrange;
