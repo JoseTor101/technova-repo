@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="container_footer_icons">
           <div className="icons_social_media">
-            <a href="https://www.instagram.com/" target="blank">
+            <a href="https://www.instagram.com/technovatecnologia/" target="blank">
               <img
                 src={InstagramIcon}
                 className="icons_footer"
@@ -49,7 +49,7 @@ const Footer = () => {
                 alt="redSocial"
               ></img>
             </a>
-            <a href="https://www.twitter.com/" target="blank">
+            <a href="https://twitter.com/Technov77439823" target="blank">
               <img
                 src={TwitterIcon}
                 className="icons_footer"

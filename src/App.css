@@ -549,6 +549,11 @@ hr.blueLine {
   border: 1px solid black;
 }
 
+.individualProductBuy p > a {
+  text-decoration: none;
+  color: black;
+}
+
 .individualProductCar {
   background-color: #ff9800;
   width: 40vw;
@@ -1477,5 +1482,66 @@ hr.blueLine {
 
 .empty {
   margin-bottom: 35vh;
+}
+
+.floatingCart {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  top: 73vh;
+  right: 3vw;
+  background-color: #ff8800;
+  border-radius: 100%;
+  border: 2px solid black;
+  color: #fff;
+  padding: 15px;
+  z-index: 100;
+  -webkit-animation-name: carritoChange;
+          animation-name: carritoChange;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes carritoChange {
+  0% {
+    background-color: #fcf45c;
+  }
+  25% {
+    background-color: darkorange;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: #c4d4e9;
+  }
+}
+
+@keyframes carritoChange {
+  0% {
+    background-color: #fcf45c;
+  }
+  25% {
+    background-color: darkorange;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: #c4d4e9;
+  }
+}
+
+.floatingCart > div {
+  padding-top: 15px;
+  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */

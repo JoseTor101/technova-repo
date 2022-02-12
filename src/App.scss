@@ -467,6 +467,10 @@ hr.blueLine {
   margin-right: 5%;
   text-align: center;
   border: 1px solid black;
+  p > a {
+    text-decoration: none;
+    color: black;
+  }
 }
 .individualProductCar{
   background-color: $principalOrange;
@@ -1189,4 +1193,34 @@ hr.blueLine {
 
 .empty {
   margin-bottom: 35vh;
+}
+
+.floatingCart {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  top: 73vh; 
+  right: 3vw;; 
+  background-color: #ff8800; 
+  border-radius: 100%;
+  border: 2px solid black;
+  color: #fff;
+  padding: 15px;
+  z-index: 100;
+  animation-name: carritoChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carritoChange {
+  0%{background-color:#fcf45c ;}
+  25%{background-color: darkorange;}
+  50%{background-color: chartreuse;}
+  75%{background-color:deeppink }
+  100%{background-color: #c4d4e9;}
+
+}
+.floatingCart> div{
+  padding-top: 15px;
+  text-align: center;
 }

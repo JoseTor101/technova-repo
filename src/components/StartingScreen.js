@@ -4,6 +4,7 @@ import Header from './Header';
 import SlideShowStartingScreen from './ImageSliderStartingScreen';
 import ProductCategories from './products/ProductCategoriesSection';
 import PromotedProducts from './products/PromotedProducts';
+import FloatingCart from './FloatingCart';
 
 const StartingScreen = () => {
 
@@ -20,6 +21,7 @@ const StartingScreen = () => {
        <div>
            <PromotedProducts/>
        </div>
+           <FloatingCart/>
        <div>
            <Footer/>
        </div>

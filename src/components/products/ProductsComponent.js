@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ProductComponent } from "./ProductComponent";
+import FloatingCart from "../FloatingCart";
 
 export const ProductsComponent = ({ products, title }) => {
   const [image, setImage] = useState();
@@ -45,6 +46,7 @@ export const ProductsComponent = ({ products, title }) => {
         </div>
       </div>
       <div className="moreProducts">Next =&gt;</div>
+      <FloatingCart></FloatingCart>
     </div>
     <Footer></Footer>
     </Fragment>
