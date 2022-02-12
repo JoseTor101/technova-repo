@@ -42,13 +42,6 @@ const Footer = () => {
                 alt="redSocial"
               ></img>
             </a>
-            <a href="https://www.whatsapp.com/" target="blank">
-              <img
-                src={WhatsappIcon}
-                className="icons_footer"
-                alt="redSocial"
-              ></img>
-            </a>
             <a href="https://twitter.com/Technov77439823" target="blank">
               <img
                 src={TwitterIcon}
@@ -59,6 +52,13 @@ const Footer = () => {
             <a href="https://facebook.com/profile.php?id=100077203895013" target="blank">
               <img
                 src={FacebookIcon}
+                className="icons_footer"
+                alt="redSocial"
+              ></img>
+            </a>
+            <a href="https://www.whatsapp.com/" target="blank">
+              <img
+                src={WhatsappIcon}
                 className="icons_footer"
                 alt="redSocial"
               ></img>
