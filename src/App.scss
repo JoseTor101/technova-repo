@@ -90,6 +90,10 @@ $principalOrange: #ff9800;
   margin-left: 2vw;
   margin-bottom: 7vh;
 }
+.HeaderSignIn {
+  margin-left: 10vw;
+  margin-bottom: 7vh;
+}
 
 .SigIn > div > input {
   min-width: 100%;
@@ -1106,6 +1110,11 @@ hr.blueLine {
   margin: auto;
 }
 
+.adminLogin{
+  width: 50%;
+  margin-left: 25%;
+}
+
 .containerLoading{
   width: 100%;
   height: auto;
@@ -1121,7 +1130,7 @@ hr.blueLine {
 .itemCart {
   height: 30vh;
   width: 96%;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 20px 0;
   border: 1px solid black;
   background-color:#f5ede2;
   display: flex;

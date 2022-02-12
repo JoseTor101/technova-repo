@@ -11,42 +11,46 @@ const CartProducts = (item) => {
   }
   console.log(item);
 
-  var total = new Intl.NumberFormat("es-ES", {
-    style: "currency",
-    currency: "COP",
-  }).format(item.precio);
+  function conversion(precio){
+    return new Intl.NumberFormat("es-ES", {
+      style: "currency",
+      currency: "COP",
+    }).format(precio);
+  }
 
-  function clearCart(){
-    window.localStorage.clear('item');
-    alert('productos eliminados')
+  function deleteElement(id){
+    let valor = JSON.parse(window.localStorage.getItem('item'));
+    let idElement = valor.filter(elemento => elemento.id !== id);
+    window.localStorage.setItem('item', JSON.stringify(idElement));
+    window.location.reload();
   }
 
     
   
   return (
     <div>
-      <div className="itemCart">
+      {item.item.map (producto => (<div className="itemCart">
         <div className="itemImgCart">
-          <img className="imgCart" src={item.img} alt="item-img"></img>
+          <img className="imgCart" src={producto.img} alt="item-img"></img>
         </div>
         <div className="itemFeactures">
           <div className="itemName">
-            <p>{item.nombre}</p>
+            <p>{producto.nombre}</p>
           </div>
           <div className="itemPrice">
-            <p>Precio: $ {total}</p>
+            <p>Precio: $ {conversion(producto.precio)}</p>
           </div>
           <div className="itemAmount">
             <p>
               Cantidad <button onClick={() => setSuma(suma + 1)}>+</button>{" "}
               {suma} <button onClick={restar}>-</button>
             </p>
-            <div className="cartDelete" onClick={() => clearCart()} >
+            <div className="cartDelete" onClick={() => deleteElement(producto.id)} >
               <img src="https://cdn-icons-png.flaticon.com/512/1017/1017530.png" alt="trashIcon"></img>
             </div>
           </div>
         </div>
-      </div>
+      </div>))}
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { ProductDetail } from "../pages/ProductDetail";
 import { Smartphones } from "../pages/Smartphones";
 import { Tvs } from "../pages/Tvs";
 import { AdminPage } from "../pages/AdminPage";
+import { AdminView1 } from "../pages/AdminView";
 import { ShoppingCart } from "../pages/ShoppingCart";
 import { AboutPage } from "../pages/AboutPage";
 
@@ -21,6 +22,7 @@ export const Router = () => {
                 <Route path='/tvs' component={Tvs} />
                 <Route path='/gadgets' component={Gadgets} />
                 <Route path='/AdminPage' component={AdminPage} />
+                <Route path='/AdminView' component={AdminView1} />
                 <Route path='/AboutUs' component={AboutPage} />
                 <Route path='/shoppingCart' component={ShoppingCart} />
                 <Route path='/product/:id/:type' component={ProductDetail} />

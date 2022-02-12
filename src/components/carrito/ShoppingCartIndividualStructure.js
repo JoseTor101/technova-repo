@@ -13,12 +13,12 @@ const ShoppingCartIndividualStructure = ({carrito, agregarProducto}) => {
             <div className="empty"><p>No elementos en el carrito</p>
             </div>
             
-        : item.map(producto => (
+        : 
          <CartProducts 
            key={item}
            item={item}
          /> 
-       ))} 
+       } 
         
     </div>);
 }
