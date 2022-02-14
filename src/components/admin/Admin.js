@@ -1,8 +1,5 @@
-import React, { Fragment, lazy, Suspense, useState } from "react";
+import React, { Fragment, useState } from "react";
 import Header from "../Header";
-import Footer from "../Footer";
-import ModalSU from "../forms/ModalSU";
-import { Redirect } from "react-router-dom";
 // const Loading = lazy((()=>import('./LoadingIcon')));
 
 const Admin = (products) => {

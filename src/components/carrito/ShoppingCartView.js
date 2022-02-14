@@ -5,6 +5,7 @@ import Producto from "./Producto";
 import Footer from "../Footer";
 import ShoppingCartIndividualStructure from "./ShoppingCartIndividualStructure";
 import Payment from "./Payment";
+import { NavItem } from "reactstrap";
 
 const ShoppingCartView = () => {
    
@@ -20,7 +21,6 @@ const ShoppingCartView = () => {
   
   //State para un carrito de compras
   const [ carrito, agregarProducto] = useState([]);
-
   // * El primer valor de la constante es la referencia hacia el valor del state y el segundo el que va a modificarlo
   
   return (
@@ -31,7 +31,7 @@ const ShoppingCartView = () => {
            <div className="shoppingCartProductsHeader">
              <div id="productAmount">
                <p id="productAmountText">
-                 Productos en carrito({carrito.length}) <box-icon type='solid' name='cart'></box-icon>
+                 CARRITO DE COMPRAS <box-icon type='solid' name='cart'></box-icon>
                </p>
              </div>
            </div>

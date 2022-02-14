@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import ReactDOM from "react-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import { useLocalStorage } from "../carrito/UseLocalStorage";
 
 
@@ -13,7 +12,7 @@ export const ProductDetailComponent = ({product, variants, producto, carrito, ag
   }
 
   function goPay(){
-    window.location.href = "localhost:3000/shoppingCart#payment"; 
+    window.location.href = "/shoppingCart"; 
   }
   return (
 
@@ -48,7 +47,7 @@ export const ProductDetailComponent = ({product, variants, producto, carrito, ag
         </div>
       </div>
       <div className="individualProductShop">
-        <div className="individualProductBuy" onClick={() => goPay}><p><Link to="/shoppingCart">Comprar</Link></p></div>
+        <div className="individualProductBuy" onClick={() => {setItem(product); goPay()}}><p><Link to="/shoppingCart">Comprar</Link></p></div>
         <div className="individualProductCar" onClick={() => {setItem(product); agregado()}}><p className="pIndividualCar">Añadir al carrito</p></div>
         
       </div>

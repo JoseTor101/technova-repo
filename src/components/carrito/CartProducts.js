@@ -9,7 +9,6 @@ const CartProducts = (item) => {
       setSuma(suma - 1);
     }
   }
-  console.log(item);
 
   function conversion(precio){
     return new Intl.NumberFormat("es-ES", {

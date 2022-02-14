@@ -21,12 +21,12 @@ const Forms_Signup = () => {
   const sendData = () => {
      var formData = new FormData();
      
-     if(Information.names != "" && 
-        Information.lastNames != "" && 
-        Information.email != ""  && 
-        Information.adress != "" && 
-        Information.userName != "" && 
-        Information.password != "" ){
+     if(Information.names !== "" && 
+        Information.lastNames !== "" && 
+        Information.email !== ""  && 
+        Information.adress !== "" && 
+        Information.userName !== "" && 
+        Information.password !== "" ){
 
           formData.append("nombres", Information.names)
           formData.append("apellidos", Information.lastNames)
