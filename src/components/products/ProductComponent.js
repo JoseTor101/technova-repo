@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useLocalStorage } from "../carrito/UseLocalStorage";
+import { UseLocalStorage } from "../carrito/UseLocalStorage";
 import "boxicons";
 
 export const ProductComponent = ({ product }) => {
   const pathName = useLocation().pathname.slice(1);
 
-  const [Item, setItem] = useLocalStorage("item", []);
+  const [Item, setItem] = UseLocalStorage("item", []);
   function agregado(){
     alert('Producto agregado al carrito');
   }

@@ -36,7 +36,7 @@ export const ProductDetail = () => {
             setVariants(['modelo', 'almacenamiento', 'ram', 'bateria', 'camaras', 'sistema_operativo', 'procesador', 'tamanio']);
         }else if(type === 'computers'){
             getComputersById(); 
-            setVariants(['modelo', 'procesador', 'ram', 'sistema_operativo', 'tamanio', 'tipo_disco']);
+            setVariants(['modelo', 'procesador', 'ram', 'almacenamiento', 'sistema_operativo', 'tamanio', 'tipo_disco']);
         }else if(type === 'gadgets'){
             getGadgetsById();
         }else{

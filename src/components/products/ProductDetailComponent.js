@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useLocalStorage } from "../carrito/UseLocalStorage";
+import { UseLocalStorage } from "../carrito/UseLocalStorage";
 
 
 export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
   var precio = new Intl.NumberFormat('es-ES',{style: 'currency', currency: 'COP'}).format(product.precio);
 
-  const [Item, setItem] = useLocalStorage("item", []);
+  const [Item, setItem] = UseLocalStorage("item", []);
   function agregado(){
     alert('Producto agregado al carrito');
   }
