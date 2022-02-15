@@ -130,6 +130,13 @@
   overflow-y: scroll;
 }
 
+.FormSignup2 {
+  height: 80vh;
+  min-width: 35vw;
+  overflow-y: scroll;
+  background-color: #f1b9b9;
+}
+
 .HeaderSignUp {
   min-width: 35vw;
 }
@@ -1392,7 +1399,7 @@ hr.blueLine {
 }
 
 .itemCart {
-  height: 30vh;
+  min-height: 30vh;
   width: 96%;
   margin: 10px 0 20px 0;
   border: 1px solid black;
@@ -1557,7 +1564,31 @@ hr.blueLine {
   text-align: center;
 }
 
+.containerHeaderNewProduct {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  margin: 5vh 0 6vh 0;
+}
+
 .headerNewProduct {
+  margin-left: 25%;
+  background-color: #0d2c5b;
+  width: 50%;
+  color: white;
+}
+
+.addingType {
+  width: 60%;
   margin-left: 4vw;
+  text-decoration: none;
+}
+
+.addingType > a {
+  background-color: orangered;
+  color: black;
+  margin-left: 13vw;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=App.css.map */

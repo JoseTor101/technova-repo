@@ -5,14 +5,10 @@ const AddTv = () => {
     const [Information, setInformation] = useState({
         name: "",
         price: "",
-        operatives: "",
-        ram: "",
-        storage: "",
-        processor: "",
-        disktype: "",
         brand: "",
         model: "",
         size: "",
+        smart: "",
         description: "",
         img: "",
       });
@@ -29,32 +25,24 @@ const AddTv = () => {
          
          if(Information.name !== "" && 
             Information.price !== "" && 
-            Information.operatives !== ""  && 
-            Information.ram !== ""  && 
-            Information.storage !== "" && 
-            Information.processor !== "" && 
-            Information.disktype !== "" && 
             Information.brand !== "" &&
             Information.model !== "" &&
             Information.size !== "" &&
+            Information.smart !== "" &&
             Information.img !== ""  &&
             Information.description !== "" ){
     
               formData.append("nombre", Information.name)
               formData.append("precio", Information.price)
-              formData.append("sistema_operativo", Information.operatives)      
-              formData.append("ram", Information.ram)      
-              formData.append("almacenamiento", Information.storage)      
-              formData.append("procesador", Information.processor)
-              formData.append("tipo_disco", Information.disktype)
               formData.append("marca", Information.brand)
               formData.append("modelo", Information.model)
               formData.append("tamanio", Information.size)
+              formData.append("smartTV", Information.size)
               formData.append("img", Information.img)
               formData.append("descripcion", Information.description)
               
               
-              fetch("https://technova-back.herokuapp.com/computer_category.php", {      
+              fetch("https://technova-back.herokuapp.com/tv_category.php", {      
                 method: "POST",
                 body: formData,
                   headers: {
@@ -76,7 +64,7 @@ const AddTv = () => {
                     description: "",
                     img: "",}) 
                 });         
-                alert('Producto creador con éxito')
+                alert('Producto creado con éxito')
     
     
               }else {
@@ -84,7 +72,7 @@ const AddTv = () => {
         }  }
 
   return (
-    <div className="FormSignup" id='tvs'>
+    <div className="FormSignup2" id='tvs'>
     <div className="HeaderSignUp">
         <div>
          <h1>Nuevo televisor</h1>
@@ -96,7 +84,7 @@ const AddTv = () => {
         <div className="Items_form_signup">
           <p>Nombre del producto</p>
           <input
-            placeholder="Ej. Computador x"
+            placeholder="Ej. Televisor x"
             type="text"
             name="name"
             onChange={HandleInputChange}
@@ -107,7 +95,7 @@ const AddTv = () => {
         <div className="Items_form_signup">
           <p>Precio</p>
           <input
-            placeholder="Ej. 125600"
+            placeholder="Ej. 1256000"
             type="text"
             name="price"
             onChange={HandleInputChange}
@@ -116,60 +104,9 @@ const AddTv = () => {
         </div>
 
         <div className="Items_form_signup">
-          <p>Sistema operativo</p>
-          <input
-            placeholder="Ej. MacOS"
-            type="text"
-            name="operatives"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Ram</p>
-          <input
-            placeholder="Ej. 8GB"
-            type="text"
-            name="ram"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Almacenamiento</p>
-          <input
-            placeholder="Ej. 256GB"
-            type="text"
-            name="storage"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Procesador</p>
-          <input
-            placeholder="Ej. Apple GPU M1"
-            type="text"
-            name="processor"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Tipo de disco</p>
-          <input
-            placeholder="Ej. SSD"
-            type="text"
-            name="disktype"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        
-        <div className="Items_form_signup">
           <p>Marca</p>
           <input
-            placeholder="Ej. Apple"
+            placeholder="Ej. SAMSUNG"
             type="text"
             name="brand"
             onChange={HandleInputChange}
@@ -179,7 +116,7 @@ const AddTv = () => {
         <div className="Items_form_signup">
           <p>Modelo</p>
           <input
-            placeholder="Ej. A2337"
+            placeholder="Ej. YLED3243NiM"
             type="text"
             name="model"
             onChange={HandleInputChange}
@@ -189,9 +126,19 @@ const AddTv = () => {
         <div className="Items_form_signup">
           <p>Tamaño</p>
           <input
-            placeholder='Ej. 14"'
+            placeholder='Ej. 32"'
             type="text"
             name="size"
+            onChange={HandleInputChange}
+            required
+          ></input>
+        </div>
+        <div className="Items_form_signup">
+          <p>Smart TV</p>
+          <input
+            placeholder='Ej. Si'
+            type="text"
+            name="smart"
             onChange={HandleInputChange}
             required
           ></input>

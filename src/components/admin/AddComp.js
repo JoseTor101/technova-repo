@@ -76,7 +76,7 @@ const AddComp = () => {
                     description: "",
                     img: "",}) 
                 });         
-                alert('Producto creador con éxito')
+                alert('Producto creado con éxito')
     
     
               }else {
@@ -84,7 +84,7 @@ const AddComp = () => {
         }  }
 
   return (
-    <div className="FormSignup" id='computers'>
+    <div className="FormSignup2" id='computers'>
     <div className="HeaderSignUp">
         <div>
          <h1>Nuevo computador</h1>

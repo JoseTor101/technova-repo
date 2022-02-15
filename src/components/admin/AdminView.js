@@ -10,7 +10,9 @@ const AdminViewR = () =>{
   return (
     <Fragment>
         <Header></Header>
-        <h1 className='headerNewProduct'>Ingresar nuevo producto</h1>
+        <div className='containerHeaderNewProduct'>
+           <h1 className='headerNewProduct'>Ingresar nuevo producto</h1>
+        </div>
         <div className='addingType'>
           <a href='#computers'>Computadores</a>
           <a href='#tvs'>Televisores</a>

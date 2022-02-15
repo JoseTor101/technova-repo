@@ -5,14 +5,7 @@ const AddGad = () => {
     const [Information, setInformation] = useState({
         name: "",
         price: "",
-        operatives: "",
-        ram: "",
-        storage: "",
-        processor: "",
-        disktype: "",
         brand: "",
-        model: "",
-        size: "",
         description: "",
         img: "",
       });
@@ -29,32 +22,18 @@ const AddGad = () => {
          
          if(Information.name !== "" && 
             Information.price !== "" && 
-            Information.operatives !== ""  && 
-            Information.ram !== ""  && 
-            Information.storage !== "" && 
-            Information.processor !== "" && 
-            Information.disktype !== "" && 
-            Information.brand !== "" &&
-            Information.model !== "" &&
-            Information.size !== "" &&
-            Information.img !== ""  &&
-            Information.description !== "" ){
+            Information.brand!== ""  && 
+            Information.description !== ""  && 
+            Information.img !== ""  ){
     
               formData.append("nombre", Information.name)
               formData.append("precio", Information.price)
-              formData.append("sistema_operativo", Information.operatives)      
-              formData.append("ram", Information.ram)      
-              formData.append("almacenamiento", Information.storage)      
-              formData.append("procesador", Information.processor)
-              formData.append("tipo_disco", Information.disktype)
-              formData.append("marca", Information.brand)
-              formData.append("modelo", Information.model)
-              formData.append("tamanio", Information.size)
-              formData.append("img", Information.img)
-              formData.append("descripcion", Information.description)
+              formData.append("marca", Information.brand)      
+              formData.append("descripcion", Information.description)      
+              formData.append("img", Information.img)   
               
               
-              fetch("https://technova-back.herokuapp.com/computer_category.php", {      
+              fetch("https://technova-back.herokuapp.com/gadgets_category.php", {      
                 method: "POST",
                 body: formData,
                   headers: {
@@ -76,7 +55,7 @@ const AddGad = () => {
                     description: "",
                     img: "",}) 
                 });         
-                alert('Producto creador con éxito')
+                alert('Producto creado con éxito')
     
     
               }else {
@@ -84,7 +63,7 @@ const AddGad = () => {
         }  }
 
   return (
-    <div className="FormSignup" id='gadgets'>
+    <div className="FormSignup2" id='gadgets'>
     <div className="HeaderSignUp">
         <div>
          <h1>Nuevo accesorio</h1>
@@ -96,7 +75,7 @@ const AddGad = () => {
         <div className="Items_form_signup">
           <p>Nombre del producto</p>
           <input
-            placeholder="Ej. Computador x"
+            placeholder="Ej. Audifonos x"
             type="text"
             name="name"
             onChange={HandleInputChange}
@@ -114,84 +93,12 @@ const AddGad = () => {
             required
           ></input>
         </div>
-
-        <div className="Items_form_signup">
-          <p>Sistema operativo</p>
-          <input
-            placeholder="Ej. MacOS"
-            type="text"
-            name="operatives"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Ram</p>
-          <input
-            placeholder="Ej. 8GB"
-            type="text"
-            name="ram"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Almacenamiento</p>
-          <input
-            placeholder="Ej. 256GB"
-            type="text"
-            name="storage"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Procesador</p>
-          <input
-            placeholder="Ej. Apple GPU M1"
-            type="text"
-            name="processor"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Tipo de disco</p>
-          <input
-            placeholder="Ej. SSD"
-            type="text"
-            name="disktype"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        
         <div className="Items_form_signup">
           <p>Marca</p>
           <input
-            placeholder="Ej. Apple"
+            placeholder="Ej. Sound Master"
             type="text"
             name="brand"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Modelo</p>
-          <input
-            placeholder="Ej. A2337"
-            type="text"
-            name="model"
-            onChange={HandleInputChange}
-            required
-          ></input>
-        </div>
-        <div className="Items_form_signup">
-          <p>Tamaño</p>
-          <input
-            placeholder='Ej. 14"'
-            type="text"
-            name="size"
             onChange={HandleInputChange}
             required
           ></input>

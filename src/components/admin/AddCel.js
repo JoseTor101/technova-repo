@@ -7,9 +7,10 @@ const AddCel = () => {
         price: "",
         operatives: "",
         ram: "",
-        storage: "",
         processor: "",
-        disktype: "",
+        storage: "",
+        cameras: "",
+        batery: "",
         brand: "",
         model: "",
         size: "",
@@ -33,8 +34,9 @@ const AddCel = () => {
             Information.ram !== ""  && 
             Information.storage !== "" && 
             Information.processor !== "" && 
-            Information.disktype !== "" && 
+            Information.cameras !== "" && 
             Information.brand !== "" &&
+            Information.cameras !== "" &&
             Information.model !== "" &&
             Information.size !== "" &&
             Information.img !== ""  &&
@@ -46,7 +48,8 @@ const AddCel = () => {
               formData.append("ram", Information.ram)      
               formData.append("almacenamiento", Information.storage)      
               formData.append("procesador", Information.processor)
-              formData.append("tipo_disco", Information.disktype)
+              formData.append("camaras", Information.cameras)
+              formData.append("bateria", Information.batery)
               formData.append("marca", Information.brand)
               formData.append("modelo", Information.model)
               formData.append("tamanio", Information.size)
@@ -54,7 +57,7 @@ const AddCel = () => {
               formData.append("descripcion", Information.description)
               
               
-              fetch("https://technova-back.herokuapp.com/computer_category.php", {      
+              fetch("https://technova-back.herokuapp.com/smartphones_category.php", {      
                 method: "POST",
                 body: formData,
                   headers: {
@@ -76,7 +79,7 @@ const AddCel = () => {
                     description: "",
                     img: "",}) 
                 });         
-                alert('Producto creador con éxito')
+                alert('Producto creado con éxito')
     
     
               }else {
@@ -84,7 +87,7 @@ const AddCel = () => {
         }  }
 
   return (
-    <div className="FormSignup">
+    <div className="FormSignup2" id='smartphones'>
     <div className="HeaderSignUp">
         <div>
          <h1>Nuevo celular</h1>
@@ -96,7 +99,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Nombre del producto</p>
           <input
-            placeholder="Ej. Computador x"
+            placeholder="Ej. Celular x"
             type="text"
             name="name"
             onChange={HandleInputChange}
@@ -107,7 +110,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Precio</p>
           <input
-            placeholder="Ej. 125600"
+            placeholder="Ej. 225600"
             type="text"
             name="price"
             onChange={HandleInputChange}
@@ -118,7 +121,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Sistema operativo</p>
           <input
-            placeholder="Ej. MacOS"
+            placeholder="Ej. Android"
             type="text"
             name="operatives"
             onChange={HandleInputChange}
@@ -146,21 +149,31 @@ const AddCel = () => {
           ></input>
         </div>
         <div className="Items_form_signup">
-          <p>Procesador</p>
+          <p>Cámaras</p>
           <input
-            placeholder="Ej. Apple GPU M1"
+            placeholder="Ej. 48 Mpx/16 Mpx"
             type="text"
-            name="processor"
+            name="cameras"
             onChange={HandleInputChange}
             required
           ></input>
         </div>
         <div className="Items_form_signup">
-          <p>Tipo de disco</p>
+          <p>Bateria</p>
           <input
-            placeholder="Ej. SSD"
+            placeholder="Ej. 4000 mAh"
             type="text"
-            name="disktype"
+            name="cameras"
+            onChange={HandleInputChange}
+            required
+          ></input>
+        </div>
+        <div className="Items_form_signup">
+          <p>Procesador</p>
+          <input
+            placeholder="Ej. MediaTek Helio"
+            type="text"
+            name="processor"
             onChange={HandleInputChange}
             required
           ></input>
@@ -169,7 +182,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Marca</p>
           <input
-            placeholder="Ej. Apple"
+            placeholder="Ej. Xiaomi"
             type="text"
             name="brand"
             onChange={HandleInputChange}
@@ -179,7 +192,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Modelo</p>
           <input
-            placeholder="Ej. A2337"
+            placeholder="Ej. Note 20"
             type="text"
             name="model"
             onChange={HandleInputChange}
@@ -189,7 +202,7 @@ const AddCel = () => {
         <div className="Items_form_signup">
           <p>Tamaño</p>
           <input
-            placeholder='Ej. 14"'
+            placeholder='Ej. 6.5"'
             type="text"
             name="size"
             onChange={HandleInputChange}
