@@ -1370,6 +1370,8 @@ hr.blueLine {
   min-height: 60vh;
   width: 90vw;
   margin: auto;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
 }
 
 .adminLogin {
@@ -1553,5 +1555,9 @@ hr.blueLine {
 .floatingCart > div {
   padding-top: 15px;
   text-align: center;
+}
+
+.headerNewProduct {
+  margin-left: 4vw;
 }
 /*# sourceMappingURL=App.css.map */
