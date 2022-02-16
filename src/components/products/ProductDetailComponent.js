@@ -31,6 +31,7 @@ export const ProductDetailComponent = ({product, variants, producto, carrito, ag
           <div className="individualProductFeacturesTable">
             <b>Marca:</b> {product.marca}
             <hr></hr>
+            
             <b>Precio:</b>$ {precio}
             <hr></hr>
             <b>Descripcion:</b> {product.descripcion}
