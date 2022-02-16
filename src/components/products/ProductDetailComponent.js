@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { UseLocalStorage } from "../carrito/UseLocalStorage";
+import { UseLocalStorage } from "../carrito/UseLocalStorage.js";
 
 
 export const ProductDetailComponent = ({product, variants, producto, carrito, agregarProducto, productos}) => {
